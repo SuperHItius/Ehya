@@ -93,6 +93,8 @@
             padding: 70px 50px
         &__comment
             max-width: 520px
+            font-size: 16px
+            line-height: 24px
 
 @media (max-width: 576px)
     .container
@@ -100,5 +102,52 @@
     .book
         &__title
             font-size: 32px
+            line-height: 40px
             &--color
                 font-size: 32px
+                line-height: 40px
+        &__buttons
+            flex-direction: column
+            align-items: center
+        &__button
+            &--primery
+                margin-right: 0
+                margin-bottom: 15px
+        &__comment
+            max-width: 420px
+
+@media (max-width: 360px)
+    .container
+        max-width: 272px
+    body
+        padding-top: 61px
+    .logo
+        width: 77px
+        margin-left: -2px
+    .navbar
+        &__top
+            padding-top: 20px
+            padding-bottom: 20px
+            &--menu-button
+                width: 24px
+                height: 18px
+                margin-right: -3px
+    .book
+        &__title
+            margin-bottom: 24px
+        &__author
+            margin-bottom: 32px
+        &__comment
+            line-height: 23px
+            max-width: 261px
+            margin-bottom: 17px
+        &__button
+            &--primery
+                padding: 8px 20px
+                margin-bottom: 10px
+            &--outline
+                padding: 8px 20px
+        &__image
+            padding: 42px 68px 59px 68px
+            max-width: 280px
+            max-height: 330px
