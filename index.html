@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ehya</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Roboto+Condensed:wght@300;400;700&family=Roboto:ital,wght@0,300;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="navbar navbar__mobile--fixed">
+        <div class="container">
+            <div class="navbar__top">
+                <a href="index.html" class="logo">
+                    <img src="image/logo/logo.svg" alt="Logo: Ehya" class="logo__image">
+                </a>
+                <div class="navbar__menu">
+                    <div class="navbar__item">
+                        <a href="#" class="navbar__link">Рекомендации</a>
+                        <a href="#" class="navbar__link">Книги</a>
+                        <a href="#" class="navbar__link">Блог</a>
+                    </div>
+                    <a href="#" class="navbar__buttons">
+                        <button data-toggle="modal" class="navbar__button">Получить</button>
+                    </a>
+                </div>
+                <button class="navbar__top--menu-button">
+                    <span class="navbar__top--line"></span>
+                    <span class="navbar__top--line"></span>
+                    <span class="navbar__top--line"></span>
+                </button>
+            </div>
+        </div>
+        <div class="navbar-bottom">
+            <div class="container">
+                <ul class="navbar-menu">
+                    <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Рекомендации</a></li>
+                    <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Книги</a></li>
+                    <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Блог</a></li>
+                    <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">
+                        <a href="#" class="navbar__buttons">
+                            <button data-toggle="modal" class="navbar__button">Получить</button>
+                        </a>
+                    </a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section class="book">
+        <div class="book__container container">
+            <div class="book__block">
+                <div class="book__text">
+                    <h1 class="book__title--color">Design Theory:</h1>
+                    <h1 class="book__title">The Psychology of<br>
+                        Graphic Design Pricing</h1>
+                    <span class="book__author">КНИГА МИШЕЛЯ ЯНГА</span>
+                    <span 
+                        class="book__comment">
+                        Спустя 15 лет я управляю собственной студией,   выполнив тысячи проектов для крупных клиентов. Теперь я делюсь своими 
+                        золотыми стратегиями ценообразования на творческую работу.
+                    </span>
+                    <div class="book__buttons">
+                        <button data-toggle="modal" class="book__button--primery">КУПИТЬ СЕЙЧАС</button>
+                        <a  
+                        href="#" target="_blank"
+                        class="book__button--outline">ЧИТАТЬ ДЕМО
+                    </a>
+                    </div>
+                </div>
+            </div>
+            <img 
+                class="book__image" 
+                src="image/book/book.jpg" 
+                alt="The Psychology of Graphic Design Pricing"
+            />
+        </div>
+        <!-- /.hero-container -->
+    </section>
+    <div class="modal">
+        <div class="modal__overlay"></div>
+        <!-- /.modal__overlay -->
+        <div class="modal__dialog">
+            <a href="#" class="modal__close">
+                <img src="image/modal/close.svg" alt="icon: close">
+            </a>
+            <h3 class="modal__title">Оформление</h3>
+            <form action="send.php" method="post" class="modal__form">
+                <input 
+                    type="text" 
+                    class="modal__input"
+                    placeholder="Your Full Name"
+                    name="name"
+                >
+                <input 
+                    type="tel:" 
+                    class="modal__input"
+                    placeholder="Phone Number"
+                    name="phone"
+                >
+                <input 
+                    type="email" 
+                    class="modal__input"
+                    placeholder="Email"
+                    name="email"
+                >
+                <button class="modal__button" type="submit">Продолжить</button>
+            </form>
+        </div>
+        <!-- /.modal__dialog -->
+    </div>
+    <!-- /.modal -->
+
+
+
+
+
+
+
+
+
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
