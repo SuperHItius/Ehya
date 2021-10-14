@@ -325,18 +325,13 @@
   left: 0;
   margin: 0;
   margin-bottom: 30px;
-}
-
-.product__object {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  font-family: Roboto Condensed;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: 0.2px;
+  color: #183B56;
 }
 
 .product__recommendation {
@@ -345,7 +340,7 @@
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 70px 0;
+  padding: 100px 0;
 }
 
 .product__recommendation--list {
@@ -369,13 +364,10 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   border: 1px solid #ECEEF2;
   max-width: 358px;
   max-height: 260px;
-  margin-right: 32px;
+  margin-right: 25px;
   margin-bottom: 32px;
 }
 
@@ -387,16 +379,88 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  padding: 19px 17px 28px;
+  max-height: 260px;
+}
+
+.product__recommendation--img {
+  padding: 6px 0 11px 14px;
+}
+
+.product__recommendation--img img {
+  border-radius: 8px;
+  width: 160px;
+  height: 240px;
+  background-color: rgba(179, 186, 197, 0.1);
+}
+
+.product__recommendation--title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 32px;
+  letter-spacing: 0.2px;
+  color: #183B56;
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.product__recommendation--descrip {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #183B56;
+  margin-bottom: 24px;
+}
+
+.product__recommendation--price {
+  font-family: Roboto Condensed;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: #1565D8;
+  margin-bottom: 24px;
+}
+
+.product__recommendation--buy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.product__recommendation--img {
-  padding: 11px 0 11px 11px;
+.product__recommendation--button {
+  padding: 22px 277px 27px 282px;
+  margin-top: -7px;
+  font-family: Roboto Condensed;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #1565D8;
+  background-color: rgba(21, 101, 216, 0.1);
+  border-radius: 8px;
+  border: none;
+}
+
+.product__buy {
+  padding: 8px 24px;
+  background: #183B56;
+  border-radius: 2000px;
+  color: #ffffff;
+  margin-right: 25px;
 }
 
 .product__topmonth {
@@ -407,21 +471,20 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  padding: 100px 0;
+  max-width: 360px;
+}
+
+.product__topmonth--block {
+  padding: 24px 50px 0 24px;
+  border-radius: 8px;
+  background-color: rgba(179, 186, 197, 0.1);
 }
 
 .product__topmonth--list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -430,6 +493,117 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+
+.product__topmonth--sector {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  padding: 8px 0;
+}
+
+.product__topmonth--sector--very {
+  padding: 12px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+
+.product__topmonth--sector--hooked {
+  padding: 17px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+
+.product__topmonth--img {
+  margin-right: 26px;
+  padding-bottom: 1px;
+}
+
+.product__topmonth--item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 32px;
+  max-height: 178px;
+}
+
+.product__topmonth--title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 32px;
+  letter-spacing: 0.2px;
+  color: #183B56;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.product__topmonth--price {
+  margin-bottom: 22px;
+  font-family: Roboto Condensed;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: #1565D8;
+}
+
+.product__topmonth--line {
+  text-align: center;
+  width: 312px;
+  height: 2px;
+  border: 1px solid #ECEEF2;
+  margin-bottom: 0;
+}
+
+.product__topmonth--best {
+  padding: 27px 120px 26px 100px;
+}
+
+.product__topmonth--best--link {
+  text-decoration: none;
+  font-family: Roboto Condensed;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #1565D8;
 }
 
 @media (max-width: 1200px) {
