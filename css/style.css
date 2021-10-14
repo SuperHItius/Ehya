@@ -453,12 +453,19 @@
   background-color: rgba(21, 101, 216, 0.1);
   border-radius: 8px;
   border: none;
+  text-transform: uppercase;
 }
 
 .product__buy {
   padding: 8px 24px;
   background: #183B56;
   border-radius: 2000px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
   color: #ffffff;
   margin-right: 25px;
 }
@@ -551,6 +558,11 @@
   padding-bottom: 1px;
 }
 
+.product__topmonth--img img {
+  border-radius: 8px;
+  background-color: rgba(179, 186, 197, 0.1);
+}
+
 .product__topmonth--item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -616,6 +628,30 @@
   }
   .book__button--outline {
     padding: 15px 20px;
+  }
+  .product__block {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .product__block--title {
+    text-align: center;
+  }
+  .product__recommendation--list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+  .product__recommendation--list li:nth-child(4),
+  .product__recommendation--list li:nth-child(5),
+  .product__recommendation--list li:nth-child(6) {
+    display: none;
+  }
+  .product__recommendation--button {
+    padding: 22px 90px 27px 90px;
   }
 }
 
@@ -740,6 +776,25 @@
     font-size: 16px;
     line-height: 24px;
   }
+  .product__block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .product__recommendation {
+    padding-bottom: 30px;
+  }
+  .product__recommendation--list li:nth-child(2),
+  .product__recommendation--list li:nth-child(3) {
+    display: none;
+  }
+  .product__topmonth {
+    padding-top: 0;
+  }
 }
 
 @media (max-width: 576px) {
@@ -769,6 +824,73 @@
   }
   .book__comment {
     max-width: 420px;
+  }
+  .product__block--title {
+    margin-bottom: 85px;
+  }
+  .product__recommendation {
+    padding-top: 30px;
+  }
+  .product__recommendation--title {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 10px;
+  }
+  .product__recommendation--descrip {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 10px;
+  }
+  .product__recommendation--list {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 30px;
+    border: 1px solid #ECEEF2;
+  }
+  .product__recommendation--img {
+    padding: 0;
+  }
+  .product__recommendation--img img {
+    margin-top: -50px;
+    width: 120px;
+    height: 160px;
+  }
+  .product__recommendation--item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-right: 0;
+    border: none;
+  }
+  .product__recommendation--sector {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .product__recommendation--button {
+    padding: 18px 85px 18px 85px;
+  }
+  .product__topmonth--img img {
+    width: 120px;
+    height: 160px;
+  }
+  .product__topmonth--title {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 5px;
+  }
+  .product__topmonth--price {
+    margin-bottom: 10px;
+  }
+  .month {
+    margin-bottom: 30px;
   }
 }
 
@@ -814,6 +936,71 @@
     padding: 42px 68px 59px 68px;
     max-width: 280px;
     max-height: 330px;
+  }
+  .product__block--title {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .product__recommendation {
+    padding-top: 60px;
+    padding-bottom: 10px;
+    margin-bottom: 48px;
+  }
+  .product__recommendation--list {
+    margin-bottom: 34px;
+  }
+  .product__recommendation--img {
+    margin-bottom: 15px;
+  }
+  .product__recommendation--img img {
+    width: 95px;
+    height: 137px;
+    margin-top: -38px;
+  }
+  .product__recommendation--descrip {
+    margin-bottom: 15px;
+  }
+  .product__recommendation--price {
+    margin-bottom: 18px;
+  }
+  .product__recommendation--button {
+    font-size: 16px;
+    line-height: 20px;
+    padding: 14px 61px 14px 61px;
+    text-transform: none;
+  }
+  .product__buy {
+    margin-right: 20px;
+    padding: 7px 25px 7px 26px;
+  }
+  .product__topmonth {
+    max-width: 300px;
+  }
+  .product__topmonth--block {
+    padding: 26px 61px 0 15px;
+  }
+  .product__topmonth--img {
+    padding: 5px;
+    margin-right: 8px;
+  }
+  .product__topmonth--img img {
+    width: 96px;
+    height: 145px;
+  }
+  .product__topmonth--sector {
+    padding: 12px 0 12px 0;
+  }
+  .product__topmonth--sector--hooked {
+    padding: 11px 0;
+  }
+  .product__topmonth--item {
+    margin-bottom: 19px;
+  }
+  .product__topmonth--best {
+    padding: 29px 81px 26px 78px;
+  }
+  .button-buy {
+    padding: 5px 18px 8px 19px;
   }
 }
 /*# sourceMappingURL=style.css.map */

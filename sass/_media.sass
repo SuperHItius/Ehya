@@ -8,6 +8,21 @@
                 margin-right: 15px
             &--outline
                 padding: 15px 20px
+    .product
+        &__block
+            justify-content: space-around
+            &--title
+                text-align: center
+        &__recommendation
+            &--list
+                flex-direction: column
+                align-items: start
+                li:nth-child(4),
+                li:nth-child(5),
+                li:nth-child(6)
+                    display: none
+            &--button
+                padding: 22px 90px 27px 90px
 
 @media (max-width: 992px)
     .container
@@ -95,6 +110,18 @@
             max-width: 520px
             font-size: 16px
             line-height: 24px
+    .product
+        &__block
+            flex-direction: column
+            align-items: center
+        &__recommendation
+            padding-bottom: 30px
+            &--list
+                li:nth-child(2),
+                li:nth-child(3)
+                    display: none
+        &__topmonth
+            padding-top: 0
 
 @media (max-width: 576px)
     .container
@@ -115,6 +142,55 @@
                 margin-bottom: 15px
         &__comment
             max-width: 420px
+    .product
+        &__block
+            &--title
+                margin-bottom: 85px
+        &__recommendation
+            padding-top: 30px
+            &--title
+                font-size: 20px
+                line-height: 24px
+                margin-bottom: 10px
+            &--descrip
+                font-size: 14px
+                line-height: 20px
+                margin-bottom: 10px
+            &--list
+                align-items: center
+                margin-bottom: 30px
+                border: 1px solid #ECEEF2
+            &--img
+                padding: 0
+                img
+                    margin-top: -50px
+                    width: 120px
+                    height: 160px
+            &--item
+                flex-direction: column
+                align-items: center
+                margin-right: 0
+                border: none
+
+            &--sector
+                align-items: center
+                padding-top: 0
+                padding-bottom: 0
+            &--button
+                padding: 18px 85px 18px 85px
+        &__topmonth
+            &--img
+                img
+                    width: 120px
+                    height: 160px
+            &--title
+                font-size: 16px
+                line-height: 24px
+                margin-bottom: 5px
+            &--price
+                margin-bottom: 10px
+    .month
+        margin-bottom: 30px
 
 @media (max-width: 360px)
     .container
@@ -151,3 +227,52 @@
             padding: 42px 68px 59px 68px
             max-width: 280px
             max-height: 330px
+    .product
+        &__block
+            &--title
+                font-size: 28px
+                line-height: 36px
+        &__recommendation
+            padding-top: 60px
+            padding-bottom: 10px
+            margin-bottom: 48px
+            &--list
+                margin-bottom: 34px
+            &--img
+                margin-bottom: 15px
+                img
+                    width: 95px
+                    height: 137px
+                    margin-top: -38px
+            &--descrip
+                margin-bottom: 15px
+            &--price
+                margin-bottom: 18px
+            &--button
+                font-size: 16px
+                line-height: 20px
+                padding: 14px 61px 14px 61px
+                text-transform: none
+        &__buy
+            margin-right: 20px
+            padding: 7px 25px 7px 26px
+        &__topmonth
+            max-width: 300px
+            &--block
+                padding: 26px 61px 0 15px
+            &--img
+                padding: 5px 
+                margin-right: 8px
+                img
+                    width: 96px
+                    height: 145px
+            &--sector
+                padding: 12px 0 12px 0
+                &--hooked
+                    padding: 11px 0
+            &--item
+                margin-bottom: 19px
+            &--best
+                padding: 29px 81px 26px 78px
+    .button-buy
+        padding: 5px 18px 8px 19px
