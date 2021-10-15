@@ -1,0 +1,127 @@
+.history
+    &__block
+        display: flex
+        margin-bottom: 14px
+        &--title
+            padding: 26px 0 61px 0
+            margin-right: 87px
+            width: 500px
+        &--titleathour
+            font-family: Roboto Condensed
+            font-style: normal
+            font-weight: bold
+            font-size: 48px
+            line-height: 60px
+            letter-spacing: 0.2px
+            color: #183B56
+            margin: 0
+        &--blockdescrip
+            padding: 28px 8px 6px 0
+            max-width: 380px
+            font-family: Open Sans
+            font-style: normal
+            font-weight: normal
+            font-size: 18px
+            line-height: 32px
+            color: #5A7184
+    &__videostory
+        max-width: 1005px
+        margin: auto
+        padding-top: 78px
+        padding-bottom: 96px
+    &__checkbox
+        display: none
+    &__video
+        &--img
+            display: block
+            width: 1005px
+            height: 380px
+            object-fit: cover
+        &--youtube
+            display: none
+        &--vicon
+            left: calc(50% - 50px)
+            top: calc(50% - 50px)
+            position: absolute
+            width: 100px
+            height: 100px
+            cursor: pointer
+        &--main
+            position: relative
+            width: 1005px
+            height: 380px
+            margin-bottom: 30px
+        #checkbox-play:checked + label
+            .history__video--youtube
+                display: block
+            .history__video--img
+                display: none
+            .history__video--vicon
+                display: none
+        &--secondary
+            display: flex
+        &--littel
+            margin-right: 30px
+        &--seconvid
+            align-items: center
+            position: relative
+            width: 315px
+            height: 200px
+        &--smollimg
+            width: 100%
+            display: block
+        &--smollplay
+            left: calc(61% - 51px)
+            top: calc(67% - 50px)
+            position: absolute
+            width: 30px
+            height: 39px
+        &--smollyoutube
+            display: none
+        &--name
+            display: block
+            font-family: Roboto
+            font-style: normal
+            font-weight: 500
+            font-size: 22px
+            line-height: 32px
+            letter-spacing: 0.2px
+            color: #183B56
+            margin-bottom: 7px
+            margin-top: 21px
+        &--about
+            display: block
+            font-family: Open Sans
+            font-style: normal
+            font-weight: normal
+            font-size: 16px
+            line-height: 22px
+            color: #5A7184
+        &--author
+            display: flex
+            justify-content: space-between
+            align-items: center
+            margin-top: 22px
+        &--icon
+            display: inline
+            margin-top: -9px
+            margin-right: 2px
+        &--title
+            display: flex
+            justify-content: space-between
+            align-items: center
+        #checbox-video1:checked + label,
+        #checbox-video2:checked + label,
+        #checbox-video3:checked + label
+            .history__video--smollimg
+                display: none
+            .history__video--smollplay
+                display: none
+            .history__video--smollyoutube
+                display: block
+            
+
+#checbox-video1,
+#checbox-video2,
+#checbox-video3
+    display: none

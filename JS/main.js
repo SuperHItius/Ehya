@@ -24,4 +24,5 @@ function closeModal() {
     modalDialog.removeClass('modal__dialog--visible');
 }
 
+
 });
