@@ -25,4 +25,60 @@ function closeModal() {
 }
 
 
+$('.slider__wrapper--mini').slick({
+    infinite: false,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    arrows: true,
+    prevArrow: $('.slider-button--prev'),
+    nextArrow: $('.slider-button--next'),
+    responsive: [
+        {
+          breakpoint: 1205,
+          settings: {
+            rows:2,
+            slidesToShow:2,
+          },
+        },],
+
+  });
+
+  $('.swiper-wrapper').slick({
+    infinite: false,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    arrows: true,
+    prevArrow: $('.slider__arrow--prev'),
+    nextArrow: $('.slider__arrow--next'),
+    responsive: [
+        {
+          breakpoint: 1205,
+          settings: {
+            slidesToShow: 4,
+          },
+        },],
+        responsive: [
+            {
+              breakpoint: 1070,
+              settings: {
+                slidesToShow: 3,
+              },
+            },],
+            responsive: [
+                {
+                  breakpoint: 870,
+                  settings: {
+                    slidesToShow: 2,
+                  },
+                },],
+                responsive: [
+                    {
+                      breakpoint: 760,
+                      settings: {
+                        slidesToShow: 1,
+                      },
+                    },],
+  });
+
 });
+

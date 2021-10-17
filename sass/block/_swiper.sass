@@ -1,0 +1,66 @@
+.container
+    position: relative
+    
+.slider
+    position: relative
+    &-main
+        padding: 1px 150px 53px 150px
+        background-color: #183B56
+    &__title
+        display: block
+        font-family: Roboto Condensed
+        font-style: normal
+        font-weight: bold
+        font-size: 36px
+        line-height: 48px
+        letter-spacing: 0.2px
+        color: #FFFFFF
+        max-width: 300px
+        margin-bottom: 60px
+        margin-top: 61px
+    &__arrow
+        position: absolute
+        top: -83px
+        right: -1px
+        transform: translateY(-50%)
+        z-index: 99
+        width: 56px
+        height: 56px
+        border: none
+        cursor: pointer
+        border-radius: 50%
+        border: 2px solid #FFFFFF
+        &--next
+            background-image: url(../image/slider-main/mainarrowright.svg)
+            background-repeat: no-repeat
+            background-position: center
+            &.slick-disabled
+                border: 1px solid #5A7184
+                background-image: url(../image/slider-main/mainarrowrightblack.svg)
+        &--prev
+            margin-right: 80px
+            background-image: url(../image/slider-main/mainarrowleftwriht.svg)
+            background-repeat: no-repeat
+            background-position: center
+            border: 2px solid #ffffff
+            &.slick-disabled
+                border: 1px solid #5A7184
+                background-image: url(../image/slider-main/mainarrowleft.svg)
+    
+
+    
+    
+    
+    
+    
+    
+.swiper
+    position: relative
+    &-slide
+        background-color: #183B56
+        &--img
+            width: 230px
+            height: 321px
+            
+
+
